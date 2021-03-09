@@ -1,0 +1,10 @@
+- hosts: windows1
+  name: "Intalling iis server and mysql"
+  gather_facts: no
+  tasks:
+    - name: check sql-server version
+      win_command: mysql --version
+      register: out
+    - debug: 
+        var: out.stdout_lines
+ 

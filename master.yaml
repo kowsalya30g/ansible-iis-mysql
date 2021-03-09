@@ -1,0 +1,8 @@
+--- 
+- 
+  hosts: windows3
+  name: "Intalling iis server and mysql"
+  gather_facts: no
+  roles: 
+    - iis
+    - mysql

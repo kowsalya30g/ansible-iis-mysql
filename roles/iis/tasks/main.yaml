@@ -1,0 +1,17 @@
+    - name: Install IIS
+      win_feature:
+        name: "Web-Server"
+        state: present
+        restart: yes
+        include_sub_features: yes
+        include_management_tools: yes
+    - name: Open site's port on firewall
+      win_firewall_rule:
+        name: iis port 8080 open
+        enable: yes
+        state: present
+        localport: 8080
+        action: Allow
+        direction: In
+        protocol: Tcp
+        force: true
