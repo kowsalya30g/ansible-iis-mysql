@@ -70,11 +70,6 @@
   - name: Install MySQL Service
     win_command: C:\Server\MySQL\bin\mysqld.exe --install MySQL
     ignore_errors: true
-
-  # - name: Initialize MySQL Server
-  #   win_command: C:\Server\MySQL\bin\mysqld.exe --initialize-insecure -u root
-  #   ignore_errors: true
-
   - name: Start MySQL Service
     win_service:
       name: MySQL
@@ -103,16 +98,3 @@
       direction: In
       protocol: Tcp
       force: true
-
-  # - name: Copy MySQL Database Dump Scripts
-  #   win_copy:
-  #     src: configure-mysql.bat
-  #     dest: C:\Temp\configure-mysql.bat
-
-  # - name: Copy MySQL Database Dump
-  #   win_copy:
-  #     src: database.sql
-  #     dest: C:\Temp\database.sql
-
-  # - name: Run Database Dump Script
-  #   win_command: C:\Temp\configure-mysql.bat
