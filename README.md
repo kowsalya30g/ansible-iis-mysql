@@ -58,7 +58,7 @@ iis role is to install iis server and opening port 8080. make sure you have open
         force: true
 ```
 
-mysql is used to install and configure mysql server in the slave machine.
+mysql role is used to install and configure mysql server in the slave machine.
 ```
   - name: Adding required dll files
     win_copy:
