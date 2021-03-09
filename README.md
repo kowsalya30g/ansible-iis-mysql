@@ -264,4 +264,4 @@ ec2-18-191-200-89.us-east-2.compute.amazonaws.com : ok=20   changed=10   unreach
 
 [Setting firewall rules](https://docs.ansible.com/ansible/latest/collections/community/windows/win_firewall_rule_module.html)
 
-[ansible windwos modules](https://docs.ansible.com/ansible/latest/collections/ansible/windows/index.html)
+[ansible windows modules](https://docs.ansible.com/ansible/latest/collections/ansible/windows/index.html)
